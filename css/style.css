@@ -1,0 +1,257 @@
+@font-face {
+    font-family: 'LatoLogo';
+    src: url(../fonts/Lato-Black.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'LatoMid';
+    src: url(../fonts/Lato-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'LatoDesc';
+    src: url(../fonts/Lato-Regular.ttf) format('truetype');
+}
+
+body, html{
+    margin: 0;
+}
+
+.fa-star {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.top-nav{
+    background-color: white;
+    padding: 20px 60px 20px 60px;
+}
+
+.logo-title {
+    font-family: 'LatoLogo';
+    font-size: 24px;
+    display: inline;
+}
+
+.top-icons{
+    display: inline;
+    float: right;
+    margin-top: 5px;
+}
+
+.top-icons a{
+    padding-left: 15px;
+    text-decoration: none;
+    color: #5CA720;
+}
+
+.top-icons a:hover{
+    color: #75ba3e;
+}
+
+.banner-top img{
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 0;
+    display: block;
+}
+
+.mid-nav{
+    padding: 20px 60px 20px 60px;
+    border-bottom: 1px solid #A5A1A1;
+}
+
+.mid-nav h2{
+    display: inline;
+    font-family: 'LatoMid';
+    font-size: 18px;
+}
+
+.num-prod{
+    font-family: 'LatoMid';
+    display: inline;
+    float: right;
+    margin-top: -12px;
+}
+
+.painel{
+    margin: 60px 60px 100px 60px;
+}
+
+.gridContainer{
+    width: 95%;
+    margin: auto auto;
+    display: grid;
+    gap: 40px 180px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 400px;
+}
+
+.gridItem{
+    height: 400px;
+    width: 323px;
+}
+
+.gridItem img{
+    height: 315px;
+    width: 323px;
+    object-fit: cover;
+}
+
+.gridItem img:hover{
+    box-shadow: 0.1px 0.1px 3px black;
+}
+
+.gridItem p{
+    font-family: 'LatoDesc';
+    display: inline;
+}
+
+.gridItem h3{
+    font-family: 'LatoDesc';
+    display: inline;
+    color: #5CA720;    
+}
+
+.gridItem h2{
+    margin: 8px 0px 8px 0px;
+    padding: 0;
+    font-family: 'LatoMid';
+    font-size: 20px;
+}
+
+footer{
+    background-color: #F9F9F9;
+    border-top: 1px solid #A5A1A1;
+    padding: 20px 60px 20px 60px;
+    font-family: 'LatoMid';
+    font-weight: bold;
+}
+
+.footer-gridContainer{
+    /* background-color: rgb(216, 2, 2); */
+    width: 100%;
+    margin: auto auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(530px, 1fr));
+    grid-auto-rows: 170px;
+    gap: 5px 0px;
+}
+
+.footer-gridItem:nth-child(1){
+    /* background-color: yellow; */
+    padding: 10px 0px 10px 0px;
+}
+
+
+
+.footer-gridItem:nth-child(2){
+    /* background-color: red; */
+    padding: 10px 0px 10px 0px;
+}
+
+
+.footer-form-div{
+    margin: 0;
+    width: 80%;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer-form-div input[type='email']{
+    display: inline-block;
+    border: .7px solid #A5A1A1;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 290px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 17px;
+}
+
+.footer-form-div button{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 550;
+    color: white;
+    background-color: #5CA720;
+    text-align: center;
+    padding-bottom: 3px;
+    margin-left: -5px;
+    height: 50px;
+    width: 130px;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.footer-form-div button:hover{
+    background-color: #75ba3e;
+    cursor: pointer;
+}
+
+.footer-gridContainer-2{
+    /* background-color: rgb(216, 2, 2); */
+    width: 100%;
+    margin: auto auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: 70px;
+    gap: 5px 0px;
+}
+
+.icons-footer-redes a{
+    text-decoration: none;
+    margin: 10px;
+    color: #5CA720;
+    font-size: 35px;
+}
+
+.icons-footer-redes a:hover{
+    color: #75ba3e;
+}
+
+.icons-footer-pagamentos a{
+    float: right;
+    text-decoration: none;
+    margin: 10px;
+    color: #5CA720;
+    font-size: 35px;
+}
+
+.icons-footer-pagamentos a:hover{
+    color: #75ba3e;
+}
+
+
+@media screen and (max-width: 48.75em){
+    .footer-form-div input[type='email']{
+        display: block;
+        border: .7px solid #A5A1A1;
+        height: 50px;
+        padding: 10px;
+        width: 100%;
+        border-radius: 8px;
+        font-size: 17px;
+    }
+    
+    .footer-form-div button{
+        display: block;
+        font-size: 18px;
+        font-weight: 550;
+        color: white;
+        background-color: #5CA720;;
+        text-align: center;
+        height: 50px;
+        width: 100%;
+        border: none;
+        border-radius: 8px;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+}
